@@ -1,0 +1,573 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Section */
+header {
+  background-color: #8d83b3; 
+  padding: 15px 0;
+}
+
+.header-container {
+  margin: 10px auto 10px auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-name {
+  font-size: 2em;
+  color: #dfe619;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin-left: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  background-color: #212125;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Tour Introduction Section */
+.tour-intro {
+  padding: 20px 20px;           
+  max-width: 1200px;            
+  border-radius: 8px;           
+  margin: 20px auto 20px auto;
+}
+
+/* Heading for Tour Intro */
+.tour-intro h2 {
+  font-size: 2em;            
+  font-weight:300;          
+  color: #333;                 
+  margin-bottom: 20px;         
+}
+
+/* Paragraph styling */
+.tour-intro p {
+  font-size: 1.2em;             
+  color: #555;                  
+  line-height: 1.6;             
+  max-width: 1200px;           
+  margin: 0 auto;               
+  font-style: italic;       
+}
+
+/* Special Offer Section */
+.special-offers {
+  padding: 30px;
+  margin: 20px auto 20px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.special-offers h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.special-offers-intro {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.8;
+  max-width: 1200px;
+  margin: 30px auto;
+  text-align: left;
+  font-style: italic;
+}
+
+
+/* Special Offer Box Styling */
+.special-offer {
+  background-color: #8d83b3;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.special-offer h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#offer-expiry {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #dfe619; 
+  margin-bottom: 20px;
+}
+
+#help-box {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #333;
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+#help-box a {
+  color: #8d83b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#help-box a:hover {
+  text-decoration: underline;
+}
+
+/* Packages Container */
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: #8d83b3;
+}
+
+/* Individual Package Card */
+.package {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.package img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.package h3 {
+  font-size: 1.5em;
+  color: #25282b;
+  margin-bottom: 10px;
+}
+
+.package p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.package p strong {
+  color: #8d83b3;
+  font-size: 1.2em;
+}
+
+.package .photo-credit {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 10px;
+}
+
+.package button {
+  background-color: #8d83b3;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.package button:hover {
+  background-color: #d3d1db;
+}
+
+/* Footer Section */
+.site-footer {
+  background-color: #8d83b3;
+  color: #535151;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content p {
+  font-size: 0.9em;
+}
+
+.social-links {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: #242016;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.social-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* Image Slider Section */
+#image-slider {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Slider container */
+.slider-container {
+  width: 100%;
+  max-width: 1200px;   
+  margin: 0 auto;     
+  position: relative;  
+}
+
+/* Image styling */
+#slider-image {
+  width: 100%;          
+  height: 550px;        
+  object-fit: cover;    
+  border-radius: 8px;
+  transition: all 0.5s ease; 
+}
+
+/* Slider Controls (positioned at the left and right middle of the image) */
+.slider-controls {
+  position: absolute;
+  top: 50%;              
+  width: 100%;           
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;  
+}
+
+/* Arrow styling (Font Awesome arrowheads) */
+.slider-controls .arrow {
+  background-color: rgba(0, 0, 0, 0.5);  
+  color: white;                           
+  font-size: 2em;                       
+  padding: 10px 20px;                   
+  cursor: pointer;                       
+  transition: background-color 0.3s ease; 
+  display: flex;
+  align-items: center;                   
+  justify-content: center;           
+  pointer-events: auto;                 
+  border-radius: 5px;                
+}
+
+.slider-controls .arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);  
+}
+
+/* Left Arrow (Font Awesome chevron-left) */
+.slider-controls .arrow.left {
+  transform: rotate(0deg); 
+}
+
+/* Right Arrow (Font Awesome chevron-right) */
+.slider-controls .arrow.right {
+  transform: rotate(0deg); 
+}
+
+/* Additional tweaks for better arrow display */
+.slider-controls .arrow i {
+  margin: 0;  
+}
+
+/* Contact Section */
+.contact-info {
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Contact Form Section */
+.contact-form {
+  background-color: white;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contact-form h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #8d83b3; 
+  color: white;
+  font-size: 1.2em;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #d3d1db;; 
+}
+
+/* Google Map Section */
+.google-map {
+  padding: 20px;
+  text-align: center;
+  margin: 50px auto 50px auto;
+}
+
+.google-map iframe {
+  width: 100%;
+  max-width: 1200px;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.google-map h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+/* Footer Section */
+.site-footer {
+  background-color: #8d83b3; 
+  color: #535151;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content p {
+  font-size: 0.9em;
+}
+
+.social-links {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: #242016;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.social-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* Active link styling */
+.nav-links a.active {
+  background-color: #252421; 
+  color: white; 
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+
+.nav-links a.active:hover {
+  background-color: #8d83b3; 
+  color: white;
+}
+
+
+/* Modal Background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Background with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; 
+  max-width: 600px; 
+}
+
+/* Close Button */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Modal Form */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content label {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.modal-content input,
+.modal-content textarea {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #8d83b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #d3d1db;
+}
+
+/* Style for Original Price (with strikethrough) */
+.original-price {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+/* Style for Discounted Price */
+.discounted-price {
+  font-size: 1.5em;
+  color: #8d83b3;  
+  font-weight: bold;
+}
+
+/* Styling for the Photo Credit Link */
+.photo-credit {
+  font-size: 0.9em; 
+  color: #555; 
+  margin-top: 10px; 
+}
+
+/* Photo Credit Link */
+.photo-credit a {
+  color: #8d83b3; 
+  text-decoration: none; 
+  font-weight: 600; 
+  transition: color 0.3s ease; 
+}
+
+/* Hover effect for the photo credit link */
+.photo-credit a:hover {
+  color: #d3d1db;; 
+  text-decoration: underline; 
+}

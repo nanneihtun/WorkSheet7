@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles_worksheet_5.css" />
+    <title>Contact - Wander Myanmar with Hnin</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <span class="site-name"> Wander Myanmar with Hnin</span>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#special-offers">Packages</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-info">
+      <h2>Contact Us</h2>
+      <p>
+        We’d love to hear from you! Whether you have a question about our
+        tour packages, need more information, or want to book a trip, feel free
+        to reach out to us. Use the form below or get in touch via the contact
+        details provided.
+      </p>
+      <p><strong>Email:</strong> info@hninwander.com</p>
+      <p><strong>Phone:</strong> +959448080080</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Google Map Section -->
+    <section class="google-map">
+      <h2>Find Us</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5334.5066334345465!2d8.2092079!3d48.0474465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4790e918cc55cb99%3A0x8dd1f01b0f4f7f6d!2sAm%20Gro%C3%9Fhausberg%209%2C%2078120%20Furtwangen%20im%20Schwarzwald!5e0!3m2!1sen!2sde!4v1730657109237!5m2!1sen!2sde"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://www.facebook.com/ExploreMyanmarTours" target="_blank">Facebook</a>
+          <a href="https://www.linkedin.com/ExploreMyanmarTours" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com/ExploreMyanmarTours" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Explore Myanmar Tours. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Wander Myanmar with Hnin</title>
+    <meta
+      name="description"
+      content="Explore Myanmar through curated travel packages designed for unforgettable experiences."
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="header-container">
+        <span class="site-name">Wander Myanmar with Hnin</span>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+           <a href="#special-offers">Packages</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Body -->
+
+    <section id="tour-intro" class="tour-intro">
+      <h2>Exclusive Myanmar Tour Packages</h2>
+      <p>
+        Welcome to <strong>Wander Myanmar with Hnin</strong>! As someone who grew up
+        in Myanmar, I deeply value the rich culture, breathtaking landscapes,
+        and the hospitality of my homeland. Through these curated tour packages,
+        I aim to connect you with the heart of Myanmar.
+      </p>
+    </section>
+    <!-- Image Slider Section -->
+    <section id="image-slider">
+      <div class="slider-container">
+        <img
+          id="slider-image"
+          src="images/pexels-tonywuphotography-5538678.jpg"
+          alt="Main Tour Image"
+        />
+
+        <!-- Arrow Controls -->
+        <div class="slider-controls">
+          <span class="arrow left" onclick="prevImage()"
+            ><i class="fas fa-chevron-left"></i
+          ></span>
+          <!-- Left Arrow -->
+          <span class="arrow right" onclick="nextImage()"
+            ><i class="fas fa-chevron-right"></i
+          ></span>
+          <!-- Right Arrow -->
+        </div>
+      </div>
+    </section>
+
+    <section id="special-offers" class="special-offers">
+      <!-- Special Offer Section -->
+      <section id="special-offer" class="special-offer">
+        <h2>Special Offer: 20% Off on All Packages!</h2>
+        <p id="offer-expiry">This offer expires on:</p>
+        <p>Don't miss out on this exclusive deal!</p>
+
+        <!-- Help Box inside the Special Offer Box -->
+        <div id="help-box" style="display: none">
+          <p>
+            Need assistance?
+            <a href="contact.html">Click here to get in touch</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Travel Packages Section -->
+      <div class="packages">
+        <!-- Package 1 -->
+        <div class="package" id="package1">
+          <img
+            src="images/History-of-Shwedagon-Pagoda-Main.jpg"
+            alt="Golden Land Explorer"
+            class="package-image"
+          />
+          <h3>Golden Land Explorer</h3>
+          <p>
+            Visit Yangon, Bagan, and Mandalay. Explore Myanmar's iconic pagodas
+            and vibrant culture.
+          </p>
+           <!-- Original and Discounted Price -->
+          <p>
+            <span class="original-price" data-original-price="799">$799</span>
+            <span class="discounted-price"></span> <!-- Discounted price will be inserted here -->
+          </p>
+  
+          <p class="photo-credit">
+            Photo by
+            <a
+              href="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/v1625766496/History-of-Shwedagon-Pagoda-Main/History-of-Shwedagon-Pagoda-Main.jpg"
+              target="_blank"
+              >res.cloudinary</a
+            >
+          </p>
+          <button onclick="bookPackage('Golden Land Explorer')">
+            Book Now
+          </button>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="package" id="package2">
+          <img
+            src="images/Inle-Lake-activities-1024x585.jpg"
+            alt="Inle Lake Serenity"
+            class="package-image"
+          />
+          <h3>Inle Lake Serenity</h3>
+          <p>
+            Experience the tranquility of Inle Lake with guided boat tours,
+            stunning landscapes, and authentic local cuisine.
+          </p>
+          <p>
+            <span class="original-price" data-original-price="599">$599</span>
+            <span class="discounted-price"></span> <!-- Discounted price will be inserted here -->
+          </p>
+          <p class="photo-credit">
+            Photo by
+            <a
+              href="https://tripjive.com/wp-content/uploads/2024/09/Inle-Lake-activities-1024x585.jpg"
+              target="_blank"
+              >tripjive</a
+            >
+          </p>
+          <button onclick="bookPackage('Inle Lake Serenity')">Book Now</button>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="package" id="package3">
+          <img
+            src="images/Bagan.jpg"
+            alt="Bagan Balloon Adventure"
+            class="package-image"
+          />
+          <h3>Bagan Balloon Ride</h3>
+          <p>
+            Float above Bagan's ancient temples and lush landscapes, taking in
+            the serene beauty of this historic city.
+          </p>
+          <p>
+            <span class="original-price" data-original-price="999">$999</span>
+            <span class="discounted-price"></span> <!-- Discounted price will be inserted here -->
+          </p>
+          <p class="photo-credit">
+            Photo by
+            <a
+              href="https://as1.ftcdn.net/v2/jpg/00/89/04/30/1000_F_89043013_L8LyRi3MFnurznRxA9kjaZI6VZOooJsz.jpg"
+              target="_blank"
+              >as1.ftcdn</a
+            >
+          </p>
+          <button onclick="bookPackage('Bagan Balloon Adventure')">
+            Book Now
+          </button>
+        </div>
+
+        <!-- Package 4 -->
+        <div class="package" id="package4">
+          <img
+            src="images/ngapali-most-beautiful-beach-drone.jpg"
+            alt="Coastal Paradise"
+            class="package-image"
+          />
+          <h3>Coastal Paradise</h3>
+          <p>
+            Relax on Ngapali Beach and explore the stunning, unspoiled coastline
+            of Myanmar's western shores.
+          </p>
+          <p>
+            <span class="original-price" data-original-price="699">$699</span>
+            <span class="discounted-price"></span> <!-- Discounted price will be inserted here -->
+          </p>
+          <p class="photo-credit">
+            Photo by
+            <a
+              href="https://www.saltinourhair.com/myanmar/ngapali-beach/"
+              target="_blank"
+              >saltinourhair</a
+            >
+          </p>
+          <button onclick="bookPackage('Coastal Paradise')">Book Now</button>
+        </div>
+
+        <!-- Package 5 -->
+        <div class="package" id="package5">
+          <img
+            src="images/mandalay-myanmar-mandalay-hill_720143-706.avif"
+            alt="Heritage Trail"
+            class="package-image"
+          />
+          <h3>Heritage Trail</h3>
+          <p>
+            Follow the heritage trail through Myanmar's historic cities, ancient
+            landmarks, and UNESCO World Heritage sites.
+          </p>
+          <p>
+            <span class="original-price" data-original-price="899">$899</span>
+            <span class="discounted-price"></span> <!-- Discounted price will be inserted here -->
+          </p>
+          <p class="photo-credit">
+            Photo by
+            <a
+              href="https://img.freepik.com/premium-photo/mandalay-myanmar-mandalay-hill_720143-706.jpg"
+              target="_blank"
+              >freepik</a
+            >
+          </p>
+          <button onclick="bookPackage('Heritage Trail')">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Explore Myanmar Tours. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+
+  <!-- Modal Popup for Contact Form -->
+  <div id="bookNowModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Contact Us to Book Your Tour</h2>
+      <form id="contactForm" action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</html>
